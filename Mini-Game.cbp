@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Mini-Game" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Mini-Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="Window" />
+					<Add directory="Rect" />
+					<Add directory="Centralizer" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Mini-Game" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="Window" />
+					<Add directory="Rect" />
+					<Add directory="Centralizer" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-std=c++14" />
+			<Add option="-fexceptions" />
+			<Add directory="C:/SDL2/i686-w64-mingw32/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32 -lSDL2main -lSDL2 -lm -ldinput8 -ldxguid -ldxerr8 -luser32 -lgdi32 -lwinmm -limm32 -lole32 -loleaut32 -lshell32 -lversion -luuid" />
+			<Add library="C:/SDL2/i686-w64-mingw32/lib/libSDL2.a" />
+			<Add library="C:/SDL2/i686-w64-mingw32/lib/libSDL2.dll.a" />
+			<Add library="C:/SDL2/i686-w64-mingw32/lib/libSDL2_test.a" />
+			<Add library="C:/SDL2/i686-w64-mingw32/lib/libSDL2main.a" />
+			<Add directory="C:/SDL2/i686-w64-mingw32/lib" />
+		</Linker>
+		<Unit filename="Centralizer/Centralizer.cpp" />
+		<Unit filename="Centralizer/Centralizer.h" />
+		<Unit filename="Rect/Rect.cpp" />
+		<Unit filename="Rect/Rect.h" />
+		<Unit filename="Window/Window.cpp" />
+		<Unit filename="Window/Window.h" />
+		<Unit filename="debugMain.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+			<Option target="Debug" />
+		</Unit>
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
